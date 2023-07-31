@@ -104,6 +104,7 @@ background-color: #F5F8FC;
 
 }
 
+
 .block p{
  margin-left: .3rem;
  margin-top: .5rem;
@@ -124,6 +125,7 @@ width: 100%;
 border: solid  rgba(0, 0, 0, 0);
 color: #fff;
 background-color: rgba(0, 0, 0, 0.7); 
+
 }
 
 .text-container h2{
@@ -133,7 +135,7 @@ margin-bottom: 1rem;
 font-size: 2rem;
 font-weight: bolder;
 font-family: 'Didot';
-
+text-shadow: -1px -8px 4px rgba(231, 222, 222, 0.84);
 
 }
 
@@ -143,6 +145,8 @@ font-size: 1rem;
 font-family: 'Didot';
 font-weight: 200;
 font-style: italic;
+text-shadow: -1px 14px 2px rgba(152, 144, 144, 0.84);
+
 
 
 }
@@ -160,6 +164,19 @@ background-attachment: fixed;
 
 
 
+}
+
+
+.social-container{
+  width: max-content;
+  margin: 1rem auto 0;
+  padding: 1rem 2rem;
+
+}
+
+.fa{
+  color: #ffffff;
+  opacity: 0.5;
 }
 
 
@@ -271,8 +288,8 @@ margin: .3rem auto 1.8rem;
   box-shadow: 0px 10px 15px -3px 	rgb(255,255,255);
   height: max-content;
   background-color: black;
-  color: black;
-  background-color: #dddddd;
+  color: #ffffff;
+  background-color: #0f0f0f;
 
 }
 
@@ -328,7 +345,7 @@ padding: 2rem 1rem;
 
 .contact-form {
   width: 100%;
- 
+
 }
 
 .contact-form input[type="text"],
