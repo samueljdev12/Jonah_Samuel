@@ -135,7 +135,7 @@ margin-bottom: 1rem;
 font-size: 2rem;
 font-weight: bolder;
 font-family: 'Didot';
-text-shadow: -1px -8px 4px rgba(231, 222, 222, 0.84);
+
 
 }
 
@@ -145,9 +145,6 @@ font-size: 1rem;
 font-family: 'Didot';
 font-weight: 200;
 font-style: italic;
-text-shadow: -1px 14px 2px rgba(152, 144, 144, 0.84);
-
-
 
 }
 
@@ -177,7 +174,11 @@ background-attachment: fixed;
 .fa{
   color: #ffffff;
   opacity: 0.5;
+  margin: 2rem .1rem;
+ 
 }
+
+
 
 
 /* Hero section css ends /*
@@ -345,6 +346,9 @@ padding: 2rem 1rem;
 
 .contact-form {
   width: 100%;
+  padding: .5rem;
+  box-shadow: 0px 5px 15px -3px 	rgb(255,255,255);
+  border-radius: 1rem;
 
 }
 
@@ -366,10 +370,12 @@ padding: 2rem 1rem;
 .contact-form button {
   background-color: #4CAF50;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 10px;
   border: none;
   cursor: pointer;
   border-radius: .5rem;
+  display: block;
+  margin: 0 auto;
 }
 
 .contact-form input[type="submit"]:hover {
