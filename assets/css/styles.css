@@ -1,0 +1,503 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Verdana", Arial, sans-serif;
+}
+
+body{
+  background-color: rgba(0, 0, 0); 
+  color: #F5F8FC;
+
+  
+  
+}
+
+
+
+/* Styling for the active navigation link */
+
+
+h3,h4{
+color: #cccccc;
+font-size: 1.5rem;
+font-weight: bold;
+font-family: 'Didot';
+}
+
+p{
+line-height: 2rem;
+
+}
+
+
+
+/* Layout styles */
+
+/* Navabar styles */
+.sid-nav{
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 0;
+  transition: .3s;
+  z-index: 1;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.openbtn{
+  font-size: 15px;
+  cursor: pointer;
+  color: black;
+  padding: 10px 8px;
+  border: none;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  transition: 1s;
+  z-index: 1;
+  border-radius: .5rem;
+  background-color: #66CCFF;
+
+}
+.sid-nav a.active{
+background-color: #66CCFF;
+
+}
+
+.sid-nav a:hover {
+  background-color: #7db3ce;
+}
+
+
+.sid-nav a{
+font-size: .8rem;
+font-weight: bold;
+padding: 0;
+color: black;
+padding: .3rem 0;
+}
+
+
+.nav-img-1{
+width: 9%;
+height: 2rem;
+margin: auto 0;
+margin-left: .8rem;
+}
+
+
+.block{
+display: flex;
+border-radius: 2rem;
+width: 90%;
+margin: .5rem auto;
+text-decoration: none;
+background-color: #F5F8FC;
+
+}
+
+.block p{
+ margin-left: .3rem;
+ margin-top: .5rem;
+}
+
+
+
+
+/* navbat styles end /*
+
+
+
+
+/* Hero section */
+.text-container{
+height: 100%;
+width: 100%;
+border: solid  rgba(0, 0, 0, 0);
+color: #fff;
+background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.text-container h2{
+margin-top: 50vh;
+text-align: center;
+margin-bottom: 1rem;
+font-size: 2rem;
+font-weight: bolder;
+font-family: 'Didot';
+
+
+}
+
+.text-container p{
+text-align: center;
+font-size: 1rem;
+font-family: 'Didot';
+font-weight: 200;
+font-style: italic;
+
+
+}
+
+.container {
+position: relative;
+width: 100%;
+height: 100%; /* Adjust height as needed */
+background-image:  url('../images/20230723_144441.jpg');
+background-size: cover;
+background-position: center;
+background-color: black;
+background-repeat: no-repeat; 
+background-attachment: fixed;
+
+
+
+}
+
+
+/* Hero section css ends /*
+
+
+
+/* main section style */
+#main{
+  height: 100vh;
+  margin-left: 0;
+  transition: 0.5s;
+
+
+}
+
+
+/* main section css end /*
+
+
+/* About section */
+#about{
+ padding: 2rem  0;
+
+}
+
+#about h3{
+text-align: center;
+margin-bottom: .5rem;
+
+}
+
+#about p{
+margin: .1rem 1rem;
+
+
+}
+
+#about hr{
+width: 50%;
+margin: 0 auto;
+margin-bottom: 1rem;
+
+}
+
+/* About section ends/*
+
+
+/* Skills section */
+#skill-section{
+  padding: 2rem .7rem;
+  margin-top: 1rem;
+ 
+  
+}
+
+#skill-section p{
+   margin: 1rem 0;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-progress {
+  width: 100%;
+  height: 30px;
+}
+
+
+
+/* Skills section css ends */
+
+
+/* Education section */
+#resume{
+padding: 3rem 0;
+
+
+}
+
+#resume p{
+  margin: 1rem .6rem;
+ 
+}
+
+#resume h3{
+text-align: center;
+margin-top: 0;
+margin-bottom: .5rem;
+}
+
+#resume hr{
+width: 50%;
+margin: .3rem auto 1.8rem;
+
+}
+
+
+.Experiences div, .Education div{
+  padding: 1rem .2rem;
+  margin: 1rem .5rem;
+  border-radius: .5rem;
+  box-shadow: 0px 10px 15px -3px 	rgb(255,255,255);
+  height: max-content;
+  background-color: black;
+  color: black;
+  background-color: #dddddd;
+
+}
+
+
+
+.Education h4, .Experiences h4{
+margin-left: .5rem;
+font-size: 1.1rem;
+}
+
+.Education p, .Experiences p{
+line-height: 2rem;
+
+}
+
+.date{
+font-weight: 500;
+letter-spacing: .1rem;
+font-size: 1.1rem;
+text-align: center;
+}
+
+
+
+.sub-tite span{
+font-style: italic;
+color: #1c68ca;
+}
+
+/* Education section css ends */
+
+/* portfolio section */
+
+
+/*portfolio section css ends */
+
+
+/* Contact section */
+#contact{
+padding: 2rem 1rem;
+ background-size: cover;
+ background-position: center;
+ background-blend-mode: overlay;
+ background-color: rgba(0, 0, 0, 0.6); 
+
+}
+
+#contact h3 {
+  text-align: center;
+  margin-top: 3rem;
+  
+}
+
+.contact-form {
+  width: 100%;
+ 
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 1rem;
+  background-color: #ffffff;
+
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
+.contact-info {
+  width: 100%;
+   line-height: 2rem;
+   text-align: center;
+}
+.contact-info p{
+  margin: 1rem 0;
+}
+
+footer{
+text-align: center;
+padding: 1.5rem 0;
+
+}
+
+footer p{
+  font-size: .8rem;
+}
+
+/* Contact section css ends */
+
+
+
+
+
+
+/* media queries */
+/* Contact section css ends */
+
+@media (min-width: 900px) {
+
+
+  /* showcase css */
+  .container {
+    background-image: url('../images/jonah-samuel.png');
+    background-size: 50% 90vh;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+   
+  }
+  
+  .container H2{
+     font-size: 3rem;
+     letter-spacing: .2rem;
+    }
+    
+    .container p{
+      font-size: 1.4rem;
+    }
+  
+    .text-container{
+      width: 45%;
+
+    }
+  
+  
+  
+  /* showcase css ends */
+  
+  /* navbar css */
+      .sid-nav{
+          width: 15%;
+          
+      }
+      #main{
+         margin-left: 15%;
+         background: black;
+      }
+  
+      .openbtn{
+        display: none;
+      }
+      
+     
+  
+     /* navbar css ends */
+  
+     /* about css */
+     #about hr{
+        margin-bottom: 2rem;
+     }
+  
+  
+  
+  
+  /* skills css */
+      .skills{
+          padding: 2rem 1.5rem;
+          display: grid;
+          grid-template-columns: 30% 30% 30%;
+          grid-gap: 1rem;
+      }
+    #skill-section p{
+      text-align: center;
+    }
+  
+  
+
+  /* skills css ends */
+  
+  /* Education css */
+      #resume{
+          display: grid;
+          grid-template-columns: 50% 50%;
+      }
+    #resume h3, p, hr{
+    grid-column: span 2;
+  
+    }
+  
+    #resume > p{
+      text-align: center;
+    }
+
+    .Experiences div, .Education div{
+      margin: 1rem 1rem;
+     
+    }
+
+   
+  /* Education css ends */
+  
+
+     
+  /* Education css ends */
+   
+  /* conact form */
+  #contact{
+    padding: 5rem 0;
+  }
+  
+  .contact-form {
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  /* conact form  ends*/
+  }
+  
