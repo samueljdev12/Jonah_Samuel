@@ -8,8 +8,6 @@
 body{
   background-color: rgba(0, 0, 0); 
   color: #F5F8FC;
-
-  
   
 }
 
@@ -166,15 +164,15 @@ background-attachment: fixed;
 
 .social-container{
   width: max-content;
-  margin: 1rem auto 0;
+  margin: 0 auto ;
   padding: 1rem 2rem;
 
 }
 
 .fa{
   color: #ffffff;
-  opacity: 0.5;
-  margin: 2rem .1rem;
+  opacity: 0.8;
+  margin: 0 .1rem;
  
 }
 
@@ -284,9 +282,9 @@ margin: .3rem auto 1.8rem;
 
 .Experiences div, .Education div{
   padding: 1rem .2rem;
-  margin: 1rem .5rem;
+  margin: 1.5rem 1rem;
   border-radius: .5rem;
-  box-shadow: 0px 10px 15px -3px 	rgb(255,255,255);
+  box-shadow: 0px 5px 15px -3px 	rgb(255,255,255);
   height: max-content;
   background-color: black;
   color: #ffffff;
