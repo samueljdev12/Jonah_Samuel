@@ -284,8 +284,8 @@ margin: .3rem auto 1.8rem;
 
 
 .Experiences div, .Education div{
-  padding: 1.2rem 1.2rem;
-  margin: 1.5rem 1rem;
+  padding: 1.2rem 1rem;
+  margin: 1.5rem .3rem;
   border-radius: .5rem;
   box-shadow: 0px 5px 15px 15px 	#111B3D inset;
   height: max-content;
@@ -365,7 +365,7 @@ padding: 2rem 1rem;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 1rem;
-  background-color: #ffffff;
+  background-color: #dddddd;
 
 }
 
