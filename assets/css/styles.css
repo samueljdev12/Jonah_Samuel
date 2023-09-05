@@ -14,15 +14,15 @@ body{
 }
 
 
-
 /* Styling for the active navigation link */
 
 
 h3,h4{
-color: #cccccc;
+color: #FE7C7C;
 font-size: 1.5rem;
 font-weight: bold;
 font-family: 'Didot';
+
 }
 
 p{
@@ -43,9 +43,8 @@ line-height: 2rem;
   left: 0;
   width: 0;
   transition: .3s;
-  z-index: 1;
+  z-index: 100;
   background-color: black;
-  color: #fff;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -62,56 +61,43 @@ line-height: 2rem;
   top: 10px;
   right: 20px;
   transition: 1s;
-  z-index: 1;
+  z-index: 200;
   border-radius: .5rem;
   background-color: #66CCFF;
 
 }
 .sid-nav a.active{
-background-color: #66CCFF;
+text-decoration: overline;
 
 }
 
 .sid-nav a:hover {
-  background-color: #66CCFF;
-  background-position: 0 0; 
+  text-decoration: overline;
 }
 
 
 .sid-nav a{
-font-size: .8rem;
+font-size: 1.4rem;
 font-weight: bold;
 padding: 0;
-color: black;
+color: #ffffff;
 padding: .3rem 0;
-background-position: -100% 0; /* Initial background position (outside the left edge) */
-transition: background-color 0.9s ease, background-position 2s ease; /* Multiple transitions separated by commas */
-}
-
-
-.nav-img-1{
-width: 9%;
-height: 2rem;
-margin: auto 0;
-margin-left: .8rem;
 }
 
 
 .block{
-display: flex;
-border-radius: 2rem;
 width: 90%;
-margin: .5rem auto;
+margin: 1rem auto;
 text-decoration: none;
-background-color: #F5F8FC;
+text-align: center;
 
 }
 
-
-.block p{
- margin-left: .3rem;
- margin-top: .5rem;
+.nav-wrapper{
+  display: flex;
+  flex-direction: column;
 }
+
 
 
 
@@ -127,7 +113,7 @@ height: 100%;
 width: 100%;
 border: solid  rgba(0, 0, 0, 0);
 color: #fff;
-background-color: rgba(0, 0, 0, 0.7); 
+background-color: rgba(0, 0, 0, 0.8); 
 
 }
 
@@ -151,18 +137,15 @@ font-style: italic;
 
 }
 
-.container {
+.my-container {
 position: relative;
 width: 100%;
 height: 100%; /* Adjust height as needed */
 background-image: url('../images/jonah-samuel.png');
-background-size: cover;
+background-size: 100% 100%;
 background-position: center;
 background-color: black;
 background-repeat: no-repeat; 
-background-attachment: fixed;
-
-
 
 }
 
@@ -205,26 +188,20 @@ background-attachment: fixed;
 #about{
  padding: 2rem  0;
 
+
 }
 
 #about h3{
-text-align: center;
-margin-bottom: .5rem;
-
+margin-bottom: 2rem;
+margin-left: 5rem;
 }
 
-#about p{
-margin: .1rem 1rem;
 
-
+.about-des{
+  width: 90%;
+  margin: 0 auto;
 }
 
-#about hr{
-width: 50%;
-margin: 0 auto;
-margin-bottom: 1rem;
-
-}
 
 /* About section ends/*
 
@@ -232,101 +209,56 @@ margin-bottom: 1rem;
 /* Skills section */
 #skill-section{
   padding: 2rem .7rem;
-  margin-top: 1rem;
- 
+  /* margin-top: 1rem; */
   
 }
 
-#skill-section p{
-   margin: 1rem 0;
+#skill-section h3{
+  text-align: center;
 }
 
-.skill {
-  margin-bottom: 20px;
-}
 
-.skill-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 
-.skill-progress {
-  width: 100%;
-  height: 30px;
-}
+
 
 
 
 /* Skills section css ends */
+.my-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.item {
+  flex-basis: calc(33.33% - 20px); /* Three columns on medium to large screens */
+  margin: 10px; /* Adjust the margin as needed for spacing */
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  background-color: #212121;
+}
+
+.item img {
+ width: 35%;
+ object-fit: cover;
+ margin-right: .5rem;
+}
+
+.skill-cont{
+  width: 100%;
+  margin: 0 auto;
+}
 
 
 /* Education section */
 #resume{
 padding: 3rem 0;
 
-
-}
-
-#resume p{
-  margin: 1rem .6rem;
- 
-}
-
-#resume h3{
-text-align: center;
-margin-top: 0;
-margin-bottom: .5rem;
-}
-
-#resume hr{
-width: 50%;
-margin: .3rem auto 1.8rem;
-
-}
-
-
-.Experiences div, .Education div{
-  padding: 1.2rem 1rem;
-  margin: 1.5rem .3rem;
-  border-radius: .5rem;
-  box-shadow: 0px 5px 15px 15px 	#111B3D inset;
-  height: max-content;
-  background-color: black;
-  color: #ffffff;
-  background-color: #0f0f0f;
-  background-position: -100% 0; /* Initial background position (outside the left edge) */
-    transition: background-color 0.9s ease, background-position 2s ease; /* Multiple transitions separated by commas */
-}
-
-.Experiences div:hover, .Education div:hover{
-  box-shadow: 0px 5px 15px 15px 	#0d0d0e inset;
-  background-position: 0 0; 
-  background-color: #111B3D;
-}
-
-.Education h4, .Experiences h4{
-margin-left: .5rem;
-font-size: 1.1rem;
-}
-
-.Education p, .Experiences p{
-line-height: 2rem;
-
-}
-
-.date{
-font-weight: 500;
-letter-spacing: .1rem;
-font-size: 1.1rem;
-text-align: center;
 }
 
 
 
-.sub-tite span{
-font-style: italic;
-color: #1c68ca;
-}
 
 /* Education section css ends */
 
@@ -351,46 +283,6 @@ padding: 2rem 1rem;
   margin-top: 3rem;
   
 }
-
-.contact-form {
-  width: 100%;
-  padding: .5rem;
-  box-shadow: -6px 16px 130px 30px 	#111B3D;
-  border-radius: 1rem;
-
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 1rem;
-  background-color: #dddddd;
-
-}
-
-.contact-form textarea {
-  height: 120px;
-}
-
-.contact-form button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 8px 10px;
-  border: none;
-  cursor: pointer;
-  border-radius: .5rem;
-  display: block;
-  margin: 0 auto;
-}
-
-.contact-form input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-
 
 .contact-info {
   width: 100%;
@@ -422,32 +314,18 @@ footer p{
 /* Contact section css ends */
 
 @media (min-width: 900px) {
-
+ /* kills */
+ .skill-cont{
+  width: 80%;
+  margin: 0 auto;
+}
 
   /* showcase css */
-  .container {
-    background-image: url('../images/jonah-samuel.png');
-    background-size: 50% 90vh;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    opacity: 0.6;
-   
-  }
   
-  .container H2{
-     font-size: 3rem;
-     letter-spacing: .2rem;
+  .my-container{
+    background-size: 60% 100%;
+    background-position: top center;  
     }
-    
-    .container p{
-      font-size: 1.4rem;
-    }
-  
-    .text-container{
-      width: 45%;
-
-    }
-  
   
   
   /* showcase css ends */
@@ -471,6 +349,10 @@ footer p{
      /* navbar css ends */
   
      /* about css */
+      #about{
+        margin-left: 5rem;
+      }
+
      #about hr{
         margin-bottom: 2rem;
      }
@@ -488,29 +370,15 @@ footer p{
     #skill-section p{
       text-align: center;
     }
+
+    .item img {
+      width: 20%;
+
+     }
   
   
 
-  /* skills css ends */
-  
-  /* Education css */
-      #resume{
-          display: grid;
-          grid-template-columns: 50% 50%;
-      }
-    #resume h3, p, hr{
-    grid-column: span 2;
-  
-    }
-  
-    #resume > p{
-      text-align: center;
-    }
 
-    .Experiences div, .Education div{
-      margin: 1rem 1rem;
-     
-    }
 
    
   /* Education css ends */
@@ -532,3 +400,8 @@ footer p{
   /* conact form  ends*/
   }
   
+  @media screen and (max-width: 768px) {
+    .item {
+      flex-basis: calc(50% - 20px); /* Two columns on small screens */
+    }
+  }

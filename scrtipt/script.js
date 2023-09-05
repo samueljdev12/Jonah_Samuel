@@ -2,13 +2,14 @@ $(document).ready(function() {
 
   //toggle navbar begining
   let side_nav = document.getElementById('side-nav')
+  const screenWidth = window.innerWidth;
   
   $('#toggle').on('click', ()=>{
-    if(side_nav.style.width === "80%"){
+    if(side_nav.style.width === "100%"){
       side_nav.style.width = "0";
       $('.openbtn').text("Menu");
     }else{
-      side_nav.style.width = "80%";
+      side_nav.style.width = "100%";
      $('.openbtn').text('Close');
      } 
   })
@@ -36,7 +37,6 @@ $(document).ready(function() {
 
   // close side nav whe  screen size reduces
   $(window).on('resize', function() {
-    const screenWidth = window.innerWidth;
   
     if (screenWidth > 900) {
       // Screen width is greater than 900 pixels
@@ -73,8 +73,18 @@ $(document).ready(function() {
       if (currentScrollPos >= sectionTop && currentScrollPos < sectionBottom) {
         const targetLink = document.querySelector(`.sid-nav a[href="#${section.id}"]`);
         activateNavLink(targetLink);
-      }
-    });
+        if (screenWidth > 900) {
+          // Screen width is greater than 900 pixels
+          // Perform actions for large screens
+          side_nav.style.width = "15%";
+        } else {
+          // Screen width is less than or equal to 900 pixels
+          // Perform actions for small screens
+          side_nav.style.width = "0";
+          $('.openbtn').text("Menu");
+        }
+    
+    }});
   }
 
   navLinks.forEach((navLink) => {

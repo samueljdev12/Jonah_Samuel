@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "fb0379a5-9825-4b45-88d6-5949b81f896b",
+		"name": "Customers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27335226"
+	},
+	"item": [
+		{
+			"name": "Create customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"MNO345\",\r\n    \"userName\": \"5WilliamJones\",\r\n    \"first_Name\": \"5William\",\r\n    \"last_Name\": \"5Jones\",\r\n    \"email\": \"5WJones@example.com\",\r\n    \"mobile\": \"9876543210\",\r\n    \"Address\": {\r\n        \"street\": \"567 Pine Street\",\r\n        \"suburb\": \"Houston\",\r\n        \"state\": \"TX\",\r\n        \"postcode\": 77002\r\n    },\r\n    \"Membership\": {\r\n        \"type\": \"Premium\",\r\n        \"duration\": 90,\r\n        \"start_date\": \"2023-07-01\",\r\n        \"end_date\": \"2023-09-29\",\r\n        \"price\": 15.99\r\n    },\r\n    \"Status\": {\r\n        \"Staff\": {\r\n            \"role\": \"Senior Staff\",\r\n            \"business_email\": \"WJones@example.com\"\r\n        },\r\n        \"ban\": false,\r\n        \"appeal\": false,\r\n        \"duration\": 0\r\n    },\r\n    \"Booking\": {\r\n        \"start_date\": \"2023-08-15\",\r\n        \"end_date\": \"2023-09-10\",\r\n        \"Payment\": {\r\n            \"method\": \"Credit Card\",\r\n            \"payment_date\": \"2023-07-15\",\r\n            \"amount\": 800\r\n        },\r\n        \"Car\": {\r\n            \"brand\": \"Ford\",\r\n            \"year\": 2018,\r\n            \"model\": \"Mustang\",\r\n            \"seat\": 4,\r\n            \"availability\": true,\r\n            \"Condition\": {\r\n                \"type_of_repair\": \"None\",\r\n                \"finished_date\": \"2023-07-15\",\r\n                \"cost_of_repair\": 0\r\n            }\r\n        }\r\n    },\r\n    \"password\": \"test5\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/customer"
+			},
+			"response": []
+		},
+		{
+			"name": "Find customers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "localhost:3001/customer"
+			},
+			"response": []
+		},
+		{
+			"name": "Find customer by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3001/customer/GHI789"
+			},
+			"response": []
+		},
+		{
+			"name": "Update customer by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_Name\": \"UpdatedJohn\",\r\n  \"last_Name\": \"UpdatedDoe\",\r\n  \"email\": \"updatedJDoe@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/customer/GHI789"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete customer information by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "localhost:3001/customer/GHI789"
+			},
+			"response": []
+		}
+	]
+}
