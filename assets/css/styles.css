@@ -68,7 +68,7 @@ line-height: 2rem;
 }
 .sid-nav a.active{
 text-decoration: overline;
-
+color: #FE7C7C;
 }
 
 .sid-nav a:hover {
@@ -261,7 +261,9 @@ padding: 3rem 0;
 
 
 /* Education section css ends */
-
+.edu-des{
+  color: #FE7C7C;
+}
 /* portfolio section */
 
 
@@ -383,6 +385,7 @@ footer p{
    
   /* Education css ends */
   
+
 
      
   /* Education css ends */
