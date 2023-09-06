@@ -294,6 +294,11 @@ padding: 2rem 1rem;
   margin: 1rem 0;
 }
 
+.form-btn{
+  background-color: #FE7C7C;
+  color: #ffffff;
+}
+
 footer{
 text-align: center;
 padding: 1.5rem 0;
@@ -368,9 +373,6 @@ footer p{
           grid-template-columns: 30% 30% 30%;
           grid-gap: 1rem;
       }
-    #skill-section p{
-      text-align: center;
-    }
 
     .item img {
       width: 20%;
