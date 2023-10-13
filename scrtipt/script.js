@@ -20,7 +20,7 @@ $(document).ready(function() {
 //chnage paragraph
   let textParagraph = $('#change');
   let initialText = textParagraph.text();
-  let alternateText = 'PROGRAMMER';
+  let alternateText = 'SOFTWARE DEVLOPER';
 
   setInterval(function() {
       textParagraph.fadeOut(1000, function() {
