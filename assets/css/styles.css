@@ -8,10 +8,39 @@
 body{
   background-color: rgba(0, 0, 0); 
   color: #F5F8FC;
-
   /* chnage here */
   
 }
+
+
+
+
+.welcome-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Set your desired background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000; /* Make sure it's on top of other elements */
+  padding: 0 2rem;
+  font-weight: bolder;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.welcome-message h1 span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(1em);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  padding-bottom: 1rem;
+}
+/* message */
 
 
 /* Styling for the active navigation link */
@@ -23,6 +52,10 @@ font-size: 1.5rem;
 font-weight: bold;
 font-family: 'Didot';
 
+}
+
+.span{
+  color: #FE7C7C;
 }
 
 p{
@@ -97,6 +130,7 @@ text-align: center;
   display: flex;
   flex-direction: column;
 }
+
 
 
 
@@ -188,7 +222,6 @@ background-repeat: no-repeat;
 #about{
  padding: 2rem  0;
 
-
 }
 
 #about h3{
@@ -196,10 +229,20 @@ margin-bottom: 2rem;
 }
 
 
-.about-des{
+.about-des {
   width: 90%;
   margin: 0 auto;
+  padding: 1.5rem;
+  transition: background-color 0.8s ease, transform 0.8s ease;
+  transform-origin: center; /* Set the transform origin to the center of the element */
+  transform-style: preserve-3d; /* Preserve the 3D transformations */
 }
+
+.about-des:hover {
+  transform: perspective(500px) scaleX(1.1);
+  border: solid;
+}
+
 
 
 /* About section ends/*
@@ -225,26 +268,30 @@ margin-bottom: 2rem;
 /* Skills section css ends */
 .my-grid{
   display: flex;
+  /* justify-content: center;
+  align-items: center; */
   flex-wrap: wrap;
-  justify-content: center; 
+  margin: 0 auto;
+
 }
 
 .item {
-  flex-basis: calc(33.33% - 20px); /* Three columns on medium to large screens */
   margin: 10px; /* Adjust the margin as needed for spacing */
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 0 1rem;
+  padding-top: 1rem;
+   width: fit-content;
   text-align: center;
   cursor: pointer;
-  /* background-color: #212121; */
+  background-color: #061B40;
+  transition: background-color 0.5s ease, border 0.5s ease, transform 0.5s ease; 
+  border: solid 3px #08275e;;
 }
 
-
-
-.item img {
- width: 35%;
- object-fit: cover;
- margin-right: .5rem;
+.item:hover {
+  background-color: #08275e;;
+  border: solid 3px #061B40;;
+  transform: scale(1.2); 
 }
 
 .skill-cont{
@@ -259,8 +306,33 @@ padding: 3rem 0;
 
 }
 
+.exper{
+ cursor: pointer;
+
+}
+
+.exper:hover{
+  transition: border 0.9s ease;
+  border: solid;
+  border-radius: 1%;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
 
 
+
+.flex p{
+  border: solid #08275e;
+  padding: .1rem .8rem;
+  background-color: #061B40;
+  margin: .5rem;
+} 
 
 /* Education section css ends */
 .edu-des{
@@ -324,10 +396,10 @@ footer p{
 
 @media (min-width: 900px) {
  /* kills */
- .skill-cont{
+ /* .skill-cont{
   width: 80%;
   margin: 0 auto;
-}
+} */
 
   /* showcase css */
   
@@ -365,22 +437,16 @@ footer p{
      #about hr{
         margin-bottom: 2rem;
      }
-  
-  
-  
-  
-  /* skills css */
-      .skills{
-          padding: 2rem 1.5rem;
-          display: grid;
-          grid-template-columns: 30% 30% 30%;
-          grid-gap: 1rem;
-      }
 
-    .item img {
-      width: 20%;
-
+     .about-des{
+      width: 100%;
      }
+  
+  
+  
+  
+ 
+
   
   
 
@@ -410,5 +476,13 @@ footer p{
   @media screen and (max-width: 768px) {
     .item {
       flex-basis: calc(50% - 20px); /* Two columns on small screens */
+    }
+
+    .about-des{
+      width: 100%;
+    }
+
+    .my-grid{
+      width: 100%;
     }
   }

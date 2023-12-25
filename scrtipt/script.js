@@ -1,5 +1,43 @@
 $(document).ready(function() {
 
+  // Function to hide the welcome message
+function hideWelcomeMessage() {
+  $('#welcome-message').fadeOut(1000, function () {
+    // Remove the welcome message container from the DOM
+    $(this).fadeOut(1000);
+  });
+}
+
+// hide message
+
+// show message
+// Function to show the welcome message with typing animation
+function showWelcomeMessage() {
+  var $welcomeMessage = $('#welcome-message h1 span');
+
+  $welcomeMessage.each(function (index) {
+    var $character = $(this);
+    setTimeout(function () {
+      $character.css({
+        opacity: 1,
+        transform: 'translateY(0)',
+      });
+    }, 100 * index);
+  });
+
+  // Set a timeout to hide the welcome message after 5 seconds (adjust as needed)
+  setTimeout(hideWelcomeMessage, 8000);
+}
+
+// Call the showWelcomeMessage function when the document is ready
+showWelcomeMessage();
+
+ // Show the welcome message
+ $('#welcome-message').fadeIn(1000);
+
+ // Set a timeout to hide the welcome message after 5 seconds (adjust as needed)
+ setTimeout(hideWelcomeMessage, 5000);
+
   //toggle navbar begining
   let side_nav = document.getElementById('side-nav')
   const screenWidth = window.innerWidth;
@@ -105,7 +143,6 @@ $(document).ready(function() {
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 $('#year').text(currentYear)
-
  
 });
 
