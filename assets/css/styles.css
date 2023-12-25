@@ -233,15 +233,15 @@ margin-bottom: 2rem;
   width: 90%;
   margin: 0 auto;
   padding: 1.5rem;
-  transition: background-color 0.8s ease, transform 0.8s ease;
-  transform-origin: center; /* Set the transform origin to the center of the element */
+  /* transition: background-color 0.8s ease, transform 0.8s ease; */
+  /* transform-origin: center; Set the transform origin to the center of the element */
   transform-style: preserve-3d; /* Preserve the 3D transformations */
 }
 
-.about-des:hover {
+/* .about-des:hover {
   transform: perspective(500px) scaleX(1.1);
   border: solid;
-}
+} */
 
 
 
@@ -283,9 +283,10 @@ margin-bottom: 2rem;
    width: fit-content;
   text-align: center;
   cursor: pointer;
-  background-color: #061B40;
+  background-color: #0a162b;
   transition: background-color 0.5s ease, border 0.5s ease, transform 0.5s ease; 
   border: solid 3px #08275e;;
+  opacity: .8;
 }
 
 .item:hover {
