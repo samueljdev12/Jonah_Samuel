@@ -197,7 +197,7 @@ background-color: #151515;
 
 
 .social-container img{
-  width: 10%;
+  width: 4%;
   opacity: 0.8;
   margin: 0 .2rem;
 }
@@ -299,6 +299,7 @@ margin-bottom: 2rem;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 3rem 5rem;
 }
 
 
@@ -318,6 +319,7 @@ margin-bottom: 2rem;
   flex: auto;
   transition: background-color 0.5s ease, border 0.5s ease, transform 0.5s ease; 
   opacity: .8;
+
 
 }
 
@@ -537,6 +539,7 @@ footer p{
 
     .my-grid{
       width: 100%;
+      padding: 0;
     }
     #project-grid{
       display: block;
@@ -581,6 +584,10 @@ footer p{
       background-color: #151515;
 
       
+      }
+
+      .social-container img{
+        width: 10%;
       }
     
    
