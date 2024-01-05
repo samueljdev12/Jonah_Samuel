@@ -13,7 +13,7 @@ function hideWelcomeMessage() {
 // show message
 // Function to show the welcome message with typing animation
 function showWelcomeMessage() {
-  var $welcomeMessage = $('#welcome-message h1 span');
+  var $welcomeMessage = $('#welcome-message h2 span');
 
   $welcomeMessage.each(function (index) {
     var $character = $(this);
@@ -53,24 +53,6 @@ showWelcomeMessage();
   })
   
   //toggle navbar ending
-
-
-//chnage paragraph
-  let textParagraph = $('#change');
-  let initialText = textParagraph.text();
-  let alternateText = 'SOFTWARE DEVLOPER';
-
-  setInterval(function() {
-      textParagraph.fadeOut(1000, function() {
-          if (textParagraph.text() === initialText) {
-              textParagraph.text(alternateText);
-          } else {
-              textParagraph.text(initialText);
-          }
-          textParagraph.fadeIn(1000);
-      });
-  }, 3000);
-  //chnage paragraph end
 
 
   // close side nav whe  screen size reduces
